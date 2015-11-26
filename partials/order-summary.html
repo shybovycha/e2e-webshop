@@ -1,0 +1,49 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Order summary</h2>
+            </div>
+        </div>
+
+        <div class="row" ng-repeat="product in order.products">
+            <div class="col-xs-6">{{ product.title }}</div>
+            <div class="col-xs-6">{{ product.price.amount | currency:'$':2 }}</div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <strong>Billing to:</strong>
+            </div>
+            <div class="col-xs-6">
+                <div>
+                    {{ order.billingDetails.firstName }} {{ order.billingDetails.lastName }}
+                </div>
+                <div>
+                    {{ order.billingDetails.address }}
+                </div>
+                <div>
+                    {{ order.billingDetails.city }}, {{ order.billingDetails.country }}
+                </div>
+                <div>
+                    {{ order.billingDetails.zipCode }}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-6">
+                <strong>Phone number:</strong>
+            </div>
+            <div class="col-xs-6">
+                <div>{{ order.billingDetails.phone }}</div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xs-6">
+                <strong>Total:</strong>
+            </div>
+            <div class="col-xs-6">{{ order.totalPrice().amount | currency:'$' }}</div>
+        </div>
+    </div>
+</div>

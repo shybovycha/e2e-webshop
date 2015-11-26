@@ -1,0 +1,17 @@
+{
+  "name": "e2e-webshop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jasmine": "^2.3.2",
+    "selenium-standalone": "^4.7.2",
+    "simplehttpserver": "0.0.5",
+    "webdriverio": "^3.3.0"
+  }
+}

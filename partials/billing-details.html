@@ -1,0 +1,42 @@
+<div class="row">
+    <div class="col-md-8 col-md-offset-2 col-xs-12">
+        <form ng-submit="submitOrder()">
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group"><label for="">First name</label><input type="text" class="form-control" ng-model="billingDetails.billingDetails.firstName" name="firstName"></div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group"><label for="">Last name</label><input type="text" class="form-control" ng-model="billingDetails.lastName" name="lastName"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group"><label for="">Address</label><input type="text" class="form-control" ng-model="billingDetails.address" name="address"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-6">
+                    <div class="form-group"><label for="">Country</label><input type="text" class="form-control" ng-model="billingDetails.country" name="country"></div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="form-group"><label for="">City</label><input type="text" class="form-control" ng-model="billingDetails.city" name="city"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group"><label for="">Zip code</label><input type="text" class="form-control" ng-model="billingDetails.zipCode" name="zipCode"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group"><label for="">Mobile phone</label><input type="text" class="form-control" ng-model="billingDetails.phone" name="phone"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 text-center">
+                    <button class="btn btn-success" type="submit">Check out</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
